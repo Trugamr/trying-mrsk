@@ -1,0 +1,11 @@
+service: mrsk-demo
+image: trugamr/mrsk-demo
+servers:
+  - 192.168.60.10
+registry:
+  username: trugamr
+  password:
+    - REGISTRY_PASSWORD
+healthcheck:
+  path: /health
+  port: 3000
