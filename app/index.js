@@ -10,6 +10,6 @@ app.get('/', async (request, reply) => {
 })
 
 const port = process.env.PORT
-app.listen({ port })
+app.listen({ port, host: '0.0.0.0' })
 
 console.log('Listening on port', port)
